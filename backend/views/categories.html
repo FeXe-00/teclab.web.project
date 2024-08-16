@@ -8,11 +8,33 @@
     <link rel="stylesheet" href="../css/categories.css" />
   </head>
   <body>
-    <section class="formulary">
-        <form action="" class="formulary__form">
-            <input type="text" name="description" placeholder="Descripción de la categoría" >
-            <input type="text" name="description" placeholder="Nombre de la categoría" >
+    <div class="container">
+      <section class="container__formulary">
+        <figure class="container__formulary__figure">
+          <img
+            src="../../public/assets/img/icon.png"
+            alt="Logo de la empresa"
+            class="container__formulary__figure__logo"
+          />
+        </figure>
+        <form action="" class="container__formulary__form">
+          <input
+            class="container__formulary__form__input"
+            type="text"
+            name="description"
+            placeholder="Descripción de la categoría"
+          />
+          <input
+            class="container__formulary__form__input"
+            type="text"
+            name="description"
+            placeholder="Nombre de la categoría"
+          />
+          <button type="submit" class="container__formulary__button">
+            Enviar
+          </button>
         </form>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
