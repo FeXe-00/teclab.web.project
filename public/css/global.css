@@ -4,7 +4,7 @@
   /* COLORS */
   --color-primary: #f5f5f5;
   --color-secondary: #333333;
-  --color-tertiary: #f4f4f4;
+  --color-tertiary: #cfcece;
 
   --color-white: #ffffff;
   --color-black: #000000;
@@ -54,6 +54,7 @@ ul {
 }
 
 button {
+  position: relative;
   cursor: pointer;
   border: none;
   border-radius: var(--border-rounded);
@@ -61,6 +62,20 @@ button {
   background-color: var(--color-secondary);
   color: var(--color-primary);
   padding: var(--size-xxs);
+  transition: background 0.15s ease-in;
+  transition: color 0.15s ease-in all;
+}
+
+button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  transition: background 0.15s ease-in;
+  transition: color 0.15s ease-in all;
+}
+
+button:active {
+  background-color: var(--color-tertiary);
+  transition: background 0.15s ease-in;
 }
 
 input {
