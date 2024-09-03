@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../../public/css/global.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label for="section">Agregar producto</label>
+      <section class="container__formulary">
+        <figure class="container__formulary__figure">
+          <img
+            src="../../public/assets/img/icon.png"
+            alt="Logo de la empresa"
+            class="container__formulary__figure__logo"
+          />
+        </figure>
+        <form action="" class="container__formulary__form">
+          <input
+            class="container__formulary__form__input"
+            type="text"
+            name="name"
+            placeholder="Nombre del producto"
+          />
+          <input
+            class="container__formulary__form__input"
+            type="text"
+            name="description"
+            placeholder="Descripción"
+          />
+          <input
+            class="container__formulary__form__input"
+            type="text"
+            name="brand"
+            placeholder="Marca"
+          />
+          <input
+            class="container__formulary__form__input"
+            type="number"
+            name="price"
+            placeholder="Precio"
+          />
+          <select>
+            <option>Selecciona categoría</option>
+            <option>b</option>
+            <option>c</option>
+          </select>
+          <button class="file-input-button">
+            Cargar imágen
+            <input
+              class="container__formulary__form__input file-type"
+              type="file"
+              name="price"
+              placeholder="Precio"
+            />
+          </button>
+          <button type="submit" class="container__formulary__button">
+            Enviar
+          </button>
+        </form>
+      </section>
+    </div>
+  </body>
 </html>
